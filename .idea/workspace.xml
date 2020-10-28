@@ -19,7 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45de4e8f-e8d4-49be-a220-2836962cea03" name="Default Changelist" comment="" />
+    <list default="true" id="45de4e8f-e8d4-49be-a220-2836962cea03" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/BACK/database/faker_data/document_number.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACK/database/seeders/ClientsTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACK/resources/views/admin/client/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACK/resources/views/layouts/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/database/factories/ClientFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/database/factories/ClientFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +189,8 @@
       <workItem from="1602278574547" duration="15879000" />
       <workItem from="1602623977120" duration="63000" />
       <workItem from="1603715436683" duration="7777000" />
-      <workItem from="1603747081257" duration="1455000" />
+      <workItem from="1603747081257" duration="5848000" />
+      <workItem from="1603897619758" duration="2546000" />
     </task>
     <servers />
   </component>
@@ -197,6 +207,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1742" y="62" width="494" height="685" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602286302907">

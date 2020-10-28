@@ -6,9 +6,13 @@ use App\Models\Client;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 use Faker\Generator as Faker;
+require_once __DIR__ . '/../faker_data/document_number.php';
 
 class ClientFactory extends Factory
 {
+
+
+
     /**
      * The name of the factory's corresponding model.
      *
@@ -23,9 +27,10 @@ class ClientFactory extends Factory
      */
     public function definition()
     {
+        $cpfs = cpfs();
         return [
             'name' => $this->faker->name,
-            'document_number' => $this->faker->numberBetween(),
+            'document_number' => $cpfs[array_rand($cpfs,1)],
             'email' => $this->faker->unique()->safeEmail,
             'phone' => $this->faker->phoneNumber,
             'defaulter'=> rand(0,1),
