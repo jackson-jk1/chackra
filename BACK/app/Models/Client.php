@@ -13,4 +13,7 @@ class Client extends Model
         2 => 'Casada',
         3 => 'divorciada'
     ];
+   protected $fillable = ['name', 'email', 'phone', 'data'];
+
 }
+
