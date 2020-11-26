@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,10 +15,26 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Auth::routes();
+
+Route::get('/Home', 'App\Http\Controllers\API\HomeController@index')->name('Home');
 
 Route::group([
     'prefix' => 'admin',
 ], function () {
-    Route::resource('/clients', 'App\Http\Controllers\API\ClientController');
+    Route::resource('/Home', 'App\Http\Controllers\API\HomeController');
+
 });
 
+Route::group([
+    'prefix' => 'calendar',
+], function () {
+    Route::get('/clients','App\Http\Controllers\API\EventController@loadEvents')->name('routeLoadEvents');
+
+});
+
+Route::group([
+    'prefix' => 'photos',
+], function () {
+    Route::resource('/imagens', 'App\Http\Controllers\API\ImagesController');
+});

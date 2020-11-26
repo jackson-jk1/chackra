@@ -16,10 +16,6 @@
         <label for="phone">Telefone</label>
             <input type="text" name="phone" class="form-control" id="phone" placeholder="Telefone">
         </div>
-        <div class="form-group">
-            <label for="data">Data</label>
-            <input type="date" name="data" class="form-control" id="data" placeholder="data">
-        </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
 @endsection

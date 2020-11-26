@@ -15,8 +15,6 @@ class ImagesController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required|max:500',
             'images' => 'required|image',
-
-
         ]);
         if ($validator->fails())
             return response()->json([
@@ -24,6 +22,7 @@ class ImagesController extends Controller
                 'menssagem' => 'Campo inválido',
                 'codigo' => '400'
             ], 400);
+
         $image = Storage::putFile('public/imagens', $request->file('images'), 'public');
         $image =  substr($image, 7); // remove 'public/' para facilitar para o front
         $imagem = new Image();
@@ -133,6 +132,9 @@ class ImagesController extends Controller
 
         ]);
 
+    }
+    public function create(){
+        return view('admin.client.create_image');
     }
 
 }

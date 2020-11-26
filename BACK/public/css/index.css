@@ -1,0 +1,86 @@
+#fundo{
+    background-color: rgba(0, 51, 0, 0.9);
+
+}
+section{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+img#baner{
+    height: 90%; ;
+    margin: auto;
+    padding: 40px;
+
+
+
+}
+
+#backgorund_baner{
+    background-image: url("/assets/image_backgorund/pinheiro.jpg");
+    background-size: 100%;
+    width: 100%;
+    padding-bottom: 100px;
+
+}
+
+.d-block .w-100 {
+    width: 80%;
+}
+div#calendarMain{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+div#calendar-content{
+    margin: auto;
+    width: 60%;
+    font-size: 1.6em;
+    background-color: #ffffff;
+    border: 8px solid #994d00;
+    border-top: 30px solid #994d00;
+    bo
+}
+
+ a.nav-link{
+    color: #003300;
+     font-size: 2.5em;
+   letter-spacing: 3px;
+
+}
+ #image_center{
+     position: absolute;
+     padding-top: 180px;
+     right: 40%;
+     left: 30%;
+
+
+ }
+
+#backgorund-navbar{
+    background-image: url("/assets/image_backgorund/pinheiro.jpg");
+    background-size: 100%;
+    margin-bottom: 0px;
+    width: 100%;
+    padding-bottom: 250px;
+}
+#navbarNav{
+    align-self: end;
+}
+
+#Section_image{
+    padding-top: 50px;
+    margin: auto;
+    width:80%;
+}
+
+#footer_map{
+    background-image: url("/assets/image_backgorund/pinheiro.jpg");
+    background-size: 100%;
+    padding-top: 30px;
+    width: 100%;
+    padding-bottom: 30px;
+}
