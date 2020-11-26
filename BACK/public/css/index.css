@@ -1,6 +1,6 @@
 #fundo{
-    background-color: rgba(0, 51, 0, 0.9);
-
+    background-image: url("/assets/image_backgorund/pinheiro.jpg");
+    background-size: 100%;
 }
 section{
     width: 100%;
@@ -18,9 +18,6 @@ img#baner{
 }
 
 #backgorund_baner{
-    background-image: url("/assets/image_backgorund/pinheiro.jpg");
-    background-size: 100%;
-    width: 100%;
     padding-bottom: 100px;
 
 }
@@ -61,8 +58,6 @@ div#calendar-content{
  }
 
 #backgorund-navbar{
-    background-image: url("/assets/image_backgorund/pinheiro.jpg");
-    background-size: 100%;
     margin-bottom: 0px;
     width: 100%;
     padding-bottom: 250px;
@@ -78,9 +73,19 @@ div#calendar-content{
 }
 
 #footer_map{
-    background-image: url("/assets/image_backgorund/pinheiro.jpg");
-    background-size: 100%;
+
     padding-top: 30px;
     width: 100%;
     padding-bottom: 30px;
+}
+
+#form_register{
+    padding-top: 80px;
+    height: 80%;
+    font-size: 1.5em;
+}
+#form_register input{
+    height: auto;
+    padding: 5px;
+    font-size: 0.9em;
 }

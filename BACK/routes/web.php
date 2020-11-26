@@ -12,29 +12,15 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('welcome');
-});
+
 Auth::routes();
 
-Route::get('/Home', 'App\Http\Controllers\API\HomeController@index')->name('Home');
+Route::get('/', 'App\Http\Controllers\API\HomeController@index');
 
-Route::group([
-    'prefix' => 'admin',
-], function () {
-    Route::resource('/Home', 'App\Http\Controllers\API\HomeController');
+Route::group(['middleware','can:admin'],function (){
 
-});
-
-Route::group([
-    'prefix' => 'calendar',
-], function () {
-    Route::get('/clients','App\Http\Controllers\API\EventController@loadEvents')->name('routeLoadEvents');
-
-});
-
-Route::group([
-    'prefix' => 'photos',
-], function () {
-    Route::resource('/imagens', 'App\Http\Controllers\API\ImagesController');
+        Route::get('/Home', 'App\Http\Controllers\API\HomeController@indexAdmin')->name('Home');
+        Route::get('/clients','App\Http\Controllers\API\EventController@loadEvents')->name('routeLoadEvents');
+        Route::resource('/imagens', 'App\Http\Controllers\API\ImagesController');
+   
 });

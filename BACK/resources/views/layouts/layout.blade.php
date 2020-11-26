@@ -15,7 +15,6 @@
 <body id="fundo">
 <div>
     <div id="container-fluid">
-       @include('templates.navbar')
         @yield('content')
     </div>
 </div>

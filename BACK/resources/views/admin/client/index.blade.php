@@ -1,6 +1,7 @@
 @extends('layouts.layout')
 @section('content')
     <section>
+        @include('templates.navbar')
         <div id="backgorund_baner">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">

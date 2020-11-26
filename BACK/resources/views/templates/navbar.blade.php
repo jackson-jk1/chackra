@@ -1,5 +1,11 @@
 <nav id="backgorund-navbar" class="navbar navbar-expand-lg ">
-    @if (Route::has('login'))
+    @guest
+        @if (Route::has('login'))
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+            </li>
+        @endif
+    @else
         <li class="nav-item dropdown">
             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                 {{ Auth::user()->name }}
@@ -17,7 +23,7 @@
                 </form>
             </div>
         </li>
-    @endif
+    @endguest
 <div id="image_center" >
     <img src="/assets/image_backgorund/placa.png">
 </div>

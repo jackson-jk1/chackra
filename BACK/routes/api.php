@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 /* route images */
 
-Route::apiResource('portfolio','App\Http\Controllers\API\PortfolioController');
 
 /* route user */
 // Route::post('login', 'API\AuthController@login');

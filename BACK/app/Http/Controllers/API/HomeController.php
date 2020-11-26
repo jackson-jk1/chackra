@@ -11,11 +11,7 @@ use Validator;
 
 class HomeController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function index()
     {
         $images =  Image::where('name','baner')->get();
@@ -24,4 +20,17 @@ class HomeController extends Controller
         ,'galleries'=>$galleries]);
     }
 
+/**
+ * Display a listing of the resource.
+ *
+ * @return \Illuminate\Http\Response
+ */
+
+public function indexAdmin()
+{
+
+    return view('admin.client.indexAdmin');
 }
+}
+
+
