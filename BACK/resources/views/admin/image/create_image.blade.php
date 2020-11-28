@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('admin.image.resources.views.layouts.layout')
 @section('content')
     <form method="POST"  action="{{ route('imagens.store') }}" enctype="multipart/form-data">
         @csrf

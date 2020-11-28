@@ -39,7 +39,7 @@ div#calendar-content{
     background-color: #ffffff;
     border: 8px solid #994d00;
     border-top: 30px solid #994d00;
-    bo
+
 }
 
  a.nav-link{
@@ -88,4 +88,105 @@ div#calendar-content{
     height: auto;
     padding: 5px;
     font-size: 0.9em;
+}
+.card_img{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 25px;
+}
+
+.small_img{
+    height: 100%;
+    cursor: pointer;
+    transition: all linear 0.4s;
+}
+.small_img:hover{
+    transform: scale(1.1);
+}
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
+#sidebar.active {
+    margin-left: -250px;
+}
+a[data-toggle="collapse"] {
+    position: relative;
+}
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%; right: 20px;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+#sidebar {
+    background: #fff;
+    color: #fff;
+    transition: all 0.3s;
+}
+#sidebar .sidebar-header {
+    padding: 20px;
+    background-image: url("/assets/image_backgorund/pinheiro.jpg");
+  }
+#sidebar ul.components {
+          padding: 20px 0;
+          border-bottom: 1px solid #47748b;
+      }
+#sidebar ul p {
+    color: #000000;
+    padding: 10px;
+    font-size: 1.8em;
+
+}
+#sidebar ul li a {
+    padding: 10px;
+    display: block;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: #000000;
+}
+#sidebar ul li a:hover {
+    color: #fff;
+    background: #fff;
+}
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+      color: #000000;
+      background: #fff;
+  }
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+#calendar_admin{
+
+    width: 70%;
+    background: #fff;
+    height: 80%;
+    margin-top: 100px;
+
+}
+div#calendar_admin{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #ffffff;
 }

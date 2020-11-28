@@ -17,10 +17,11 @@ Auth::routes();
 
 Route::get('/', 'App\Http\Controllers\API\HomeController@index');
 
-Route::group(['middleware','can:admin'],function (){
+Route::group(['middleware' => 'can:admin'],function (){
 
-        Route::get('/Home', 'App\Http\Controllers\API\HomeController@indexAdmin')->name('Home');
+        Route::get('/admin/Home', 'App\Http\Controllers\API\HomeController@indexAdmin')->name('Home');
         Route::get('/clients','App\Http\Controllers\API\EventController@loadEvents')->name('routeLoadEvents');
-        Route::resource('/imagens', 'App\Http\Controllers\API\ImagesController');
-   
+        Route::get('/imagens', 'App\Http\Controllers\API\ImagesController@index')->name('imagens');
+        Route::get('/eventos', 'App\Http\Controllers\API\EventController@index')->name('eventos');
+
 });

@@ -14,4 +14,11 @@ class EventController extends Controller
         return response()->json($events);
 
     }
+
+    public function index()
+    {
+        $events = Event::all();
+        return view('admin.admin_view.indexAdmin', ['events' =>$events]);
+
+    }
 }

@@ -98,22 +98,11 @@ class ImagesController extends Controller
 
     public function index()
     {
-        $imagens = Image::all();
-        if ($imagens->count() > 0) {
-            return response()->json([
-                'dados' => $imagens,
-                'mensagem' => 'imagem mostrada com sucesso',
-                'código' => '200'
-            ], 200);
-
-        }
-
-        return response()->json([
-            'mensagem' => 'nao ha iagens cadastradas',
-            'código' => '500'
-        ], 500);
-
+        $images = Image::all();
+        return view('admin.admin_view.indexAdmin');
     }
+
+
 
     public function show(Request $request)
     {

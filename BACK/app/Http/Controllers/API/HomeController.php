@@ -11,7 +11,7 @@ use Validator;
 
 class HomeController extends Controller
 {
-    
+
     public function index()
     {
         $images =  Image::where('name','baner')->get();
@@ -29,7 +29,7 @@ class HomeController extends Controller
 public function indexAdmin()
 {
 
-    return view('admin.client.indexAdmin');
+    return view('admin.admin_view.indexAdmin');
 }
 }
 

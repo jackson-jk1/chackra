@@ -27,26 +27,13 @@
         <div id="calendarMain">
             <h1 class="mb-5"> Confira um dia livre e faça uma reserva</h1>
                 <div id="calendar-content">
-                @include('admin.client.calendar')
+                @include('admin.calendar.calendar')
                 </div>
         </div>
-        <div id="Section_image">
-        <div class="card-deck">
-            @foreach($galleries as $gallery)
-            <div class="card mb-5">
-                <img class="card-img-top" src="{{asset('storage/'.$gallery->path)}}" height="300">
-                <div class="card-body">
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-            @endforeach
-           </div>
-        </div>
-
+            @include('admin.client.galer_view')
         <div id="footer_map">
             @include('templates.footer')
         </div>
-
     </section>
 
 

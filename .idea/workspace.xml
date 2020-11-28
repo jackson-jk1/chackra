@@ -20,41 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45de4e8f-e8d4-49be-a220-2836962cea03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BACK/public/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACK/public/assets/image_backgorund/pinheiro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACK/public/assets/image_backgorund/placa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACK/public/assets/js/callendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACK/public/assets/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACK/public/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACK/resources/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACK/resources/views/admin/client/calendar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACK/resources/views/admin/client/client_list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACK/resources/views/admin/client/create_image.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACK/resources/views/templates/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACK/resources/views/templates/navbar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACK/public/js/galery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACK/resources/views/admin/admin_view/indexAdmin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACK/resources/views/admin/client/galer_view.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/AgendaController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/EventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/ImagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/ImagesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/app/Models/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Models/Client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/app/Models/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Models/Image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/database/faker_data/document_number.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/database/migrations/2020_10_10_014108_create_agenda_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/database/migrations/2020_10_26_125222_create_clients_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/database/migrations/2020_10_26_125222_create_clients_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/client/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/client/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/public/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/public/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/calendar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/calendar/calendar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/client_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/admin_view/client_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/admin_view/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/create_image.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/image/create_image.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/admin_view/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/client/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/indexAdmin.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BACK/resources/views/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/layouts/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BACK/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,13 +183,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/BACK/public/assets/image_backgorund" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/BACK/resources/views/admin/admin_view" />
+      <recent name="$PROJECT_DIR$/BACK/resources/views/admin/calendar" />
+      <recent name="$PROJECT_DIR$/BACK/resources/views/admin/image" />
       <recent name="$PROJECT_DIR$/BACK/public/assets" />
       <recent name="$PROJECT_DIR$/BACK/public/js" />
-      <recent name="$PROJECT_DIR$/BACK/app/Http/Controllers/API" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/BACK/public/assets/image_backgorund" />
     </key>
   </component>
   <component name="RunManager">
@@ -236,6 +221,10 @@
       <workItem from="1606148370464" duration="4446000" />
       <workItem from="1606240665974" duration="10771000" />
       <workItem from="1606338377123" duration="7670000" />
+      <workItem from="1606354718536" duration="86000" />
+      <workItem from="1606434068233" duration="8887000" />
+      <workItem from="1606516920085" duration="12959000" />
+      <workItem from="1606588365605" duration="2570000" />
     </task>
     <servers />
   </component>
@@ -281,6 +270,10 @@
     </state>
     <state x="581" y="27" width="699" height="693" key="find.popup/1280.0.1366.768/0.27.1280.693@1280.0.1366.768" timestamp="1605822100604" />
     <state x="148" y="27" width="618" height="693" key="find.popup/1280.0.1366.768/72.27.1208.693@72.27.1208.693" timestamp="1605470648546" />
+    <state x="1663" y="174" key="run.anything.popup" timestamp="1606590819005">
+      <screen x="1280" y="0" width="1366" height="768" />
+    </state>
+    <state x="1663" y="174" key="run.anything.popup/1280.0.1366.768/0.27.1280.693@1280.0.1366.768" timestamp="1606590819005" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -289,6 +282,14 @@
           <url>file://$PROJECT_DIR$/../BACK/routes/api.php</url>
           <line>20</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/BACK/resources/views/admin/client/galer_view.blade.php</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/BACK/resources/views/admin/admin_view/client_list.blade.php</url>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

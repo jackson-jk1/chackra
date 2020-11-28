@@ -1,8 +1,8 @@
-@extends('layouts.layout')
+@extends('admin.admin_view.resources.views.layouts.layout')
 @section('content')
-    <form method="POST"  action="{{ route('clients.update',['client' => $client->id]) }}">
+    <form method="POST"  action="{{ route('clients.store') }}">
         @csrf
-        {{method_field('PUT')}}
+        <a href="{{ route('clients.store') }}">aaaaaaaaaaaaaaaa</a>
         <div class="form-group">
             <label for="name">nome</label>
             <input type="text" name="name" class="form-control" id="name" placeholder="Digite seu nome">
@@ -13,7 +13,7 @@
             <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
         </div>
         <div class="form-group">
-            <label for="phone">Telefone</label>
+        <label for="phone">Telefone</label>
             <input type="text" name="phone" class="form-control" id="phone" placeholder="Telefone">
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
