@@ -21,7 +21,7 @@ Route::group(['middleware' => 'can:admin'],function (){
 
         Route::get('/admin/Home', 'App\Http\Controllers\API\HomeController@indexAdmin')->name('Home');
         Route::get('/clients','App\Http\Controllers\API\EventController@loadEvents')->name('routeLoadEvents');
-        Route::get('/imagens', 'App\Http\Controllers\API\ImagesController@index')->name('imagens');
+        Route::resource('/imagens', 'App\Http\Controllers\API\ImagesController');
         Route::get('/eventos', 'App\Http\Controllers\API\EventController@index')->name('eventos');
 
 });

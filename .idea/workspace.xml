@@ -20,22 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45de4e8f-e8d4-49be-a220-2836962cea03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BACK/public/js/galery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACK/resources/views/admin/admin_view/indexAdmin.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACK/resources/views/admin/client/galer_view.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACK/resources/views/admin/image/list_image.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/EventController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/ImagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/ImagesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Providers/AuthServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BACK/public/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/public/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/calendar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/calendar/calendar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/client_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/admin_view/client_list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/admin_view/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/create_image.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/image/create_image.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/admin_view/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/client/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/indexAdmin.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/admin_view/client_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/admin_view/client_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/admin_view/indexAdmin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/admin_view/indexAdmin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/image/create_image.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/image/create_image.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BACK/resources/views/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/layouts/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BACK/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/routes/web.php" afterDir="false" />
     </list>
@@ -244,6 +237,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="411" y="147" width="600" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606597089307">
+      <screen x="72" y="27" width="1288" height="636" />
+    </state>
+    <state x="411" y="147" width="600" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1288.636@72.27.1288.636" timestamp="1606597089307" />
     <state x="1742" y="62" width="494" height="685" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606338703330">
       <screen x="1280" y="0" width="1366" height="768" />
     </state>

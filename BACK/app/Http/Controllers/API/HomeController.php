@@ -29,7 +29,7 @@ class HomeController extends Controller
 public function indexAdmin()
 {
 
-    return view('admin.admin_view.indexAdmin');
+    return view('admin.admin_view.indexAdmin',['parameter'=>0]);
 }
 }
 

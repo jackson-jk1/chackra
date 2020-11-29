@@ -190,3 +190,12 @@ div#calendar_admin{
     text-align: center;
     background-color: #ffffff;
 }
+
+#imagem_form{
+    margin-top: 180px;
+    background-color: #fff;
+    padding: 20px;
+}
+img.center_image{
+   width: 100%;
+}

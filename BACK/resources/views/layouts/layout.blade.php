@@ -2,6 +2,7 @@
 <head lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <meta charset='utf-8' />
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='../assets/lib/main.css' rel='stylesheet' />
     <link href='../assets/css/style.css' rel='stylesheet' />
     <link rel="stylesheet" href="../css/app.css"/>

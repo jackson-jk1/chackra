@@ -11,8 +11,8 @@
                 <li>
                     <a href="{{ route('eventos') }}">Reservas</a> </li>
                 <li>
-                <li> <a href="{{ route('imagens') }}">Imagens</a> </li>
-                <li> <a href="{{ route('imagens') }}">Administradores</a> </li>
+                <li> <a href="{{ route('imagens.index') }}">Imagens</a> </li>
+                <li> <a href="{{ route('imagens.index') }}">Administradores</a> </li>
                 <li> <a href="{{ route('logout') }}"
                         onclick="event.preventDefault();
 
@@ -28,21 +28,25 @@
                 <div class="container-fluid">
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
 
-                        <span>Toggle Sidebar</span>
+                        <i class="fa fa-bars" style="font-size:26px"></i>
                     </button>
                 </div>
             </nav>
 
         </div>
-        @guest
-            @if (Route::has('imagens'))
+          @if ($parameter == 0)
+            <div id="calendar_admin">
                 @include('admin.calendar.calendar');
+            </div>
+
+          @endif
+            @if ($parameter == 1)
+                    @include('admin.admin_view.client_list');
             @endif
-        @elseif(Route::has('eventos'))
-            @include('admin.admin_view.client_list');
+            @if($parameter == 2)
+            @include('admin.image.list_image');
+            @endif
 
-
-        @endguest
 
     </div>
 

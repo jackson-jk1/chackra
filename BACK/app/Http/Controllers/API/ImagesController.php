@@ -77,19 +77,18 @@ class ImagesController extends Controller
 
     }
 
-    public function destroy(Request $request)
+    public function destroy(Image $imagen)
     {
 
-        $imagem = Image::find($request->id);
+        $imagem = Image::find($imagen);
         if (!$imagem) {
             return response()->json([
-                'mensagem' => 'imagem nao encontrada',
+                'mensagem' =>  $imagem,
                 'código' => '500'
             ], 500);
         }
-
-        Storage::delete('public/'.$imagem->path);
-        $imagem->delete();
+        Storage::delete('public/'.$imagen->path);
+        $imagen->delete();
         return response()->json([
             'mensagem' => 'imagem excluida com sucesso',
             'código' => '200'
@@ -99,7 +98,7 @@ class ImagesController extends Controller
     public function index()
     {
         $images = Image::all();
-        return view('admin.admin_view.indexAdmin');
+        return view('admin.admin_view.indexAdmin',['imagens'=>$images,'parameter'=> 2]);
     }
 
 
@@ -123,7 +122,7 @@ class ImagesController extends Controller
 
     }
     public function create(){
-        return view('admin.client.create_image');
+        return view('admin.image.create_image');
     }
 
 }
