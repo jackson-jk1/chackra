@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -11,13 +12,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::group([
-    'prefix' => 'admin',
-], function () {
-    Route::resource('/clients', 'App\Http\Controllers\API\ClientController');
-});
+Auth::routes();
 
+Route::get('/', 'App\Http\Controllers\API\HomeController@index');
+
+Route::group(['middleware' => 'can:admin'],function (){
+
+        Route::get('/admin/Home', 'App\Http\Controllers\API\HomeController@indexAdmin')->name('Home');
+        Route::get('/clients','App\Http\Controllers\API\EventController@loadEvents')->name('routeLoadEvents');
+        Route::resource('/imagens', 'App\Http\Controllers\API\ImagesController');
+        Route::get('/eventos', 'App\Http\Controllers\API\EventController@index')->name('eventos');
+
+});

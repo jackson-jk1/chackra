@@ -16,10 +16,14 @@ class CreateClientsTable extends Migration
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email');
+            $table->string('email')->unique();
             $table->string('phone');
+<<<<<<< HEAD
             $table->date('data');
             $table->string('path');
+=======
+
+>>>>>>> b625e15544abd0638de45402b23be65908697825
             $table->timestamps();
 
 

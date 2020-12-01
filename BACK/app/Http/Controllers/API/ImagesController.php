@@ -15,8 +15,6 @@ class ImagesController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required|max:500',
             'images' => 'required|image',
-
-
         ]);
         if ($validator->fails())
             return response()->json([
@@ -24,6 +22,7 @@ class ImagesController extends Controller
                 'menssagem' => 'Campo inválido',
                 'codigo' => '400'
             ], 400);
+
         $image = Storage::putFile('public/imagens', $request->file('images'), 'public');
         $image =  substr($image, 7); // remove 'public/' para facilitar para o front
         $imagem = new Image();
@@ -78,19 +77,18 @@ class ImagesController extends Controller
 
     }
 
-    public function destroy(Request $request)
+    public function destroy(Image $imagen)
     {
 
-        $imagem = Image::find($request->id);
+        $imagem = Image::find($imagen);
         if (!$imagem) {
             return response()->json([
-                'mensagem' => 'imagem nao encontrada',
+                'mensagem' =>  $imagem,
                 'código' => '500'
             ], 500);
         }
-
-        Storage::delete('public/'.$imagem->path);
-        $imagem->delete();
+        Storage::delete('public/'.$imagen->path);
+        $imagen->delete();
         return response()->json([
             'mensagem' => 'imagem excluida com sucesso',
             'código' => '200'
@@ -99,22 +97,11 @@ class ImagesController extends Controller
 
     public function index()
     {
-        $imagens = Image::all();
-        if ($imagens->count() > 0) {
-            return response()->json([
-                'dados' => $imagens,
-                'mensagem' => 'imagem mostrada com sucesso',
-                'código' => '200'
-            ], 200);
-
-        }
-
-        return response()->json([
-            'mensagem' => 'nao ha iagens cadastradas',
-            'código' => '500'
-        ], 500);
-
+        $images = Image::all();
+        return view('admin.admin_view.indexAdmin',['imagens'=>$images,'parameter'=> 2]);
     }
+
+
 
     public function show(Request $request)
     {
@@ -133,6 +120,9 @@ class ImagesController extends Controller
 
         ]);
 
+    }
+    public function create(){
+        return view('admin.image.create_image');
     }
 
 }

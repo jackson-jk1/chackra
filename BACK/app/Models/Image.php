@@ -8,14 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Image extends Model
 {
+
+    const IMAGE_STATUS = [
+        1 => 'baner',
+        2 => 'galery',
+
+    ];
     use HasFactory;
     protected $fillable = [
         'name', 'path'
     ];
 
-    public function portfolios()
-    {
-        return $this->hasMany(Portfolio::class);
-
-    }
 }

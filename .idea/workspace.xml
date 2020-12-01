@@ -20,12 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45de4e8f-e8d4-49be-a220-2836962cea03" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/ClientController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BACK/app/Models/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Models/Client.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BACK/database/migrations/2020_10_26_125222_create_clients_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/database/migrations/2020_10_26_125222_create_clients_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/client/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/client/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/client/index.blade.php" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/BACK/resources/views/admin/image/list_image.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/EventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/ImagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/app/Http/Controllers/API/ImagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/public/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/public/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/admin_view/client_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/admin_view/client_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/admin_view/indexAdmin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/admin_view/indexAdmin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/resources/views/admin/image/create_image.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/admin/image/create_image.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/resources/views/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/resources/views/layouts/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK/routes/web.php" afterDir="false" />
+>>>>>>> b625e15544abd0638de45402b23be65908697825
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +173,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$USER_HOME$/Documentos/manicure" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BACK/public/assets/image_backgorund" />
+>>>>>>> b625e15544abd0638de45402b23be65908697825
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -167,12 +185,23 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="settings.php.frameworks" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="$PROJECT_DIR$/BACK/public" />
+=======
+      <recent name="$PROJECT_DIR$/BACK/resources/views/admin/admin_view" />
+      <recent name="$PROJECT_DIR$/BACK/resources/views/admin/calendar" />
+      <recent name="$PROJECT_DIR$/BACK/resources/views/admin/image" />
+      <recent name="$PROJECT_DIR$/BACK/public/assets" />
+      <recent name="$PROJECT_DIR$/BACK/public/js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/BACK/public/assets/image_backgorund" />
+>>>>>>> b625e15544abd0638de45402b23be65908697825
     </key>
   </component>
   <component name="RunManager">
@@ -194,10 +223,25 @@
       <workItem from="1603715436683" duration="7777000" />
       <workItem from="1603747081257" duration="5848000" />
       <workItem from="1603897619758" duration="2546000" />
+<<<<<<< HEAD
       <workItem from="1603904830997" duration="66000" />
       <workItem from="1603904906750" duration="2629000" />
       <workItem from="1605382283948" duration="16637000" />
       <workItem from="1606760140185" duration="1236000" />
+=======
+      <workItem from="1605465676850" duration="17304000" />
+      <workItem from="1605567755071" duration="5663000" />
+      <workItem from="1605631579350" duration="1748000" />
+      <workItem from="1605720094051" duration="17572000" />
+      <workItem from="1605821438754" duration="8127000" />
+      <workItem from="1606148370464" duration="4446000" />
+      <workItem from="1606240665974" duration="10771000" />
+      <workItem from="1606338377123" duration="7670000" />
+      <workItem from="1606354718536" duration="86000" />
+      <workItem from="1606434068233" duration="8887000" />
+      <workItem from="1606516920085" duration="12959000" />
+      <workItem from="1606588365605" duration="2570000" />
+>>>>>>> b625e15544abd0638de45402b23be65908697825
     </task>
     <servers />
   </component>
@@ -217,6 +261,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="345" y="27" width="732" height="636" key="#Inspections" timestamp="1603905787168">
       <screen x="72" y="27" width="1288" height="636" />
     </state>
@@ -226,30 +271,58 @@
     </state>
     <state x="174" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1288.636@72.27.1288.636" timestamp="1605386877006" />
     <state x="1742" y="62" width="494" height="685" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602286302907">
+=======
+    <state x="411" y="147" width="600" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606597089307">
+      <screen x="72" y="27" width="1288" height="636" />
+    </state>
+    <state x="411" y="147" width="600" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1288.636@72.27.1288.636" timestamp="1606597089307" />
+    <state x="1742" y="62" width="494" height="685" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606338703330">
+>>>>>>> b625e15544abd0638de45402b23be65908697825
       <screen x="1280" y="0" width="1366" height="768" />
     </state>
-    <state x="1742" y="62" width="494" height="685" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1280.0.1366.768/0.27.1280.693@1280.0.1366.768" timestamp="1602286302907" />
+    <state x="1742" y="62" width="494" height="685" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1280.0.1366.768/0.27.1280.693@1280.0.1366.768" timestamp="1606338703330" />
     <state x="1732" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603719060219">
       <screen x="1280" y="0" width="1366" height="768" />
     </state>
     <state x="1732" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1280.0.1366.768/0.27.1280.693@1280.0.1366.768" timestamp="1603719060219" />
+<<<<<<< HEAD
     <state x="545" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1606412838715">
       <screen x="72" y="27" width="1288" height="636" />
     </state>
     <state x="1782" y="155" width="424" height="491" key="FileChooserDialogImpl/1280.0.1366.768/0.27.1280.693@1280.0.1366.768" timestamp="1602624037351" />
     <state x="545" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1288.636@72.27.1288.636" timestamp="1606412838715" />
     <state x="1488" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1602296880293">
+=======
+    <state x="548" y="177" width="424" height="491" key="FileChooserDialogImpl" timestamp="1606148744055">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="1782" y="155" width="424" height="491" key="FileChooserDialogImpl/1280.0.1366.768/0.27.1280.693@1280.0.1366.768" timestamp="1605825587922" />
+    <state x="548" y="177" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1606148744055" />
+    <state x="1488" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1606257267019">
+>>>>>>> b625e15544abd0638de45402b23be65908697825
       <screen x="1280" y="0" width="1366" height="768" />
     </state>
-    <state x="1488" y="31" width="1022" height="737" key="SettingsEditor/1280.0.1366.768/0.27.1280.693@1280.0.1366.768" timestamp="1602296880293" />
+    <state x="1488" y="31" width="1022" height="737" key="SettingsEditor/1280.0.1366.768/0.27.1280.693@1280.0.1366.768" timestamp="1606257267019" />
     <state x="1594" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603747874269">
       <screen x="1280" y="0" width="1366" height="768" />
     </state>
     <state x="1594" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/1280.0.1366.768/0.27.1280.693@1280.0.1366.768" timestamp="1603747874269" />
+<<<<<<< HEAD
     <state x="441" y="259" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1603904869905">
       <screen x="72" y="27" width="1288" height="636" />
     </state>
     <state x="441" y="259" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/72.27.1288.636@72.27.1288.636" timestamp="1603904869905" />
+=======
+    <state x="581" y="27" width="699" height="693" key="find.popup" timestamp="1605822100604">
+      <screen x="0" y="27" width="1280" height="693" />
+    </state>
+    <state x="581" y="27" width="699" height="693" key="find.popup/1280.0.1366.768/0.27.1280.693@1280.0.1366.768" timestamp="1605822100604" />
+    <state x="148" y="27" width="618" height="693" key="find.popup/1280.0.1366.768/72.27.1208.693@72.27.1208.693" timestamp="1605470648546" />
+    <state x="1663" y="174" key="run.anything.popup" timestamp="1606590819005">
+      <screen x="1280" y="0" width="1366" height="768" />
+    </state>
+    <state x="1663" y="174" key="run.anything.popup/1280.0.1366.768/0.27.1280.693@1280.0.1366.768" timestamp="1606590819005" />
+>>>>>>> b625e15544abd0638de45402b23be65908697825
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -258,6 +331,14 @@
           <url>file://$PROJECT_DIR$/../BACK/routes/api.php</url>
           <line>20</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/BACK/resources/views/admin/client/galer_view.blade.php</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/BACK/resources/views/admin/admin_view/client_list.blade.php</url>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
