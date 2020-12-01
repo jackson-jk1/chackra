@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 @section('content')
-    <form method="POST"  action="{{ route('clients.store') }}">
+    <form method="POST"  action="{{ route('clients.store') }}" enctype="multipart/form-data">
         @csrf
         <a href="{{ route('clients.store') }}">aaaaaaaaaaaaaaaa</a>
         <div class="form-group">
@@ -19,6 +19,10 @@
         <div class="form-group">
             <label for="data">Data</label>
             <input type="date" name="data" class="form-control" id="data" placeholder="data">
+        </div>
+        <div class="form-group">
+            <label for="image">Data</label>
+            <input type="file" name="images" class="form-control" id="image" placeholder="image">
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>

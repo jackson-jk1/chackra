@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Client;
 use Illuminate\Http\Request;
 use Validator;
+use Illuminate\Support\Facades\Storage;
 
 class ClientController extends Controller
 {
@@ -41,7 +42,8 @@ class ClientController extends Controller
             'name' => 'required|string',
             'email' => 'required|email',
             'phone' => 'required|string',
-            'data' => 'required|date'
+            'data' => 'required|date',
+            'images' => 'required|image',
         ]);
         if ($validator->fails())
             return response()->json([
@@ -49,7 +51,16 @@ class ClientController extends Controller
                 'menssagem' => 'Campo inválidoaa',
                 'codigo'=> '400'
             ] , 400);
-        Client::create($request->all());
+        $client = new Client;
+        $image = Storage::putFile('public/imagens', $request->file('images'), 'public');
+        $image =  substr($image, 7); // remove 'public/' para facilitar para o front
+        $client->path = $image;
+        $client->name = $request->name;
+        $client->email = $request->email;
+        $client->phone = $request->phone;
+        $client->data = $request->data;
+        $client->save();
+
 
         return response()->json([
             'mensagem' => 'Portfolio criado com sucesso!',

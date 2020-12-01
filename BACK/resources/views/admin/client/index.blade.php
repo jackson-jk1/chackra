@@ -24,6 +24,7 @@
                 <td>{{ $client->data }}</td>
                 <td>{{ $client->email }}</td>
                 <td>{{ $client->phone }}</td>
+                <img src="{{ url('storage/'.$client->path) }}">
                 <td>
 
                 </td>
