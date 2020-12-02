@@ -24,6 +24,9 @@
                     </a>
                 </div>
         </div>
+        <a class="btn btn-info btn-flat email-fixo" data-custom='open_modal' href="">
+            <i class="fa fa-comment-o" style="font-size:48px"></i>
+        </a>
         <div id="calendarMain">
             <h1 class="mb-5"> Confira um dia livre e faça uma reserva</h1>
                 <div id="calendar-content">

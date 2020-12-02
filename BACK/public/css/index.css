@@ -199,3 +199,20 @@ div#calendar_admin{
 img.center_image{
    width: 100%;
 }
+div.modal-content{
+    height: 500px;
+}
+
+textarea{
+    height: 100%;
+}
+textarea#exampleFormControlTextarea1.form-control{
+    height: 250px;
+    font-size: 1.2em;
+}
+.email-fixo {
+    position: fixed;
+    bottom:10px;
+    left:10px;
+    z-index: 999;
+}
