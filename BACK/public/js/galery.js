@@ -13,12 +13,13 @@ $("body").on('click', "[data-custom='open_modal']", function (event) {
     	<h4 class="modal-title">'+ title + '</h4>\
     	</div>\
     	<div class="modal-body">\
-    	\<form>\
+    	\<form method="POST" action="/">\
+    	\@csrf\
   <div class="form-group">\
     <label for="exampleFormControlInput1"><h3>Seu email</h3></label>\
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">\
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">\
     \ <label for="exampleFormControlInput1"><h3>Seu nome</h3></label>\
-    \<input type="text" class="form-control" id="name" placeholder="seu nome">\
+    \<input type="text" class="form-control" id="name" placeholder="seu nome" name="name">\
   </div>\
   <div class="form-group">\
   </div>\
@@ -26,7 +27,7 @@ $("body").on('click', "[data-custom='open_modal']", function (event) {
   </div>\
   <div class="form-group">\
     <label for="exampleFormControlTextarea1"><h3>Digite sua Mensagem</h3></label>\
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>\
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="bodyMessage"></textarea>\
   </div>\
   \<button type="submit" class="btn btn-success">Success</button>\
 </form>\

@@ -12,8 +12,9 @@ class ImagesController extends Controller
 {
     public function store(Request $request)
     {
+        $name_type = implode(',',array_keys(Image::IMAGE_STATUS));
         $validator = Validator::make($request->all(), [
-            'name' => 'required|max:500',
+             'name'=>"required|in:$name_type",
             'images' => 'required|image',
         ]);
         if ($validator->fails())
@@ -29,15 +30,10 @@ class ImagesController extends Controller
         $imagem->name = $request->name;
         $imagem->path = $image;
         $imagem->save();
-        return response()->json([
-            'dados' => $imagem,
-            'mensagem' => 'Imagem criada com sucesso!',
-            'código' => '201'
-        ], 201);
-
+        return redirect('imagens');
     }
 
-    public function update(Request $request)
+    public function update(Request $request ,Image $imagen)
     {
 
         /* Verifica se o campo está correto */
@@ -52,28 +48,25 @@ class ImagesController extends Controller
                  'codigo'=> '400'
             ] , 400);
 
-        $imagem = Image::find($request->id);
+        $imagem = Image::find($imagen);
         if (!$imagem) {
             return response()->json([
-                'mensagem' => 'imagem nao encontrada',
+                'mensagem' => $imagem,
                 'código' => '500'
             ], 500);
 
         };
 
         if ($request->has('images')) {
-            Storage::delete($imagem->caminho);
-            $caminho = Storage::putFile('public/imagens', $request->file('images'), 'public');
-            $caminho = substr($caminho, 7);
-            $imagem->path = $caminho;
+            Storage::delete('public/'.$imagen->path);
+            $image = Storage::putFile('public/imagens', $request->file('images'), 'public');
+            $image =  substr($image, 7); // remove 'public/' para facilitar para o front
+            $imagen->path = $image;
         }
 
-        $imagem->name = $request->name;
-        $imagem->save();
-        return response()->json([
-            'mensagem' => 'Serviço alterado com sucesso',
-            'código' => '201'
-        ], 201);
+        $imagen->name = $request->name;
+        $imagen->save();
+        return redirect('imagen');
 
     }
 
@@ -89,40 +82,21 @@ class ImagesController extends Controller
         }
         Storage::delete('public/'.$imagen->path);
         $imagen->delete();
-        return response()->json([
-            'mensagem' => 'imagem excluida com sucesso',
-            'código' => '200'
-        ], 200);
+        return redirect('imagens');
     }
 
     public function index()
     {
         $images = Image::all();
-        return view('admin.admin_view.indexAdmin',['imagens'=>$images,'parameter'=> 2]);
+        return view('admin.admin_view.indexAdmin',['images'=>$images,'parameter'=> 2]);
     }
 
-
-
-    public function show(Request $request)
-    {
-        $imagem = Image::find($request->id);
-        if (!$imagem) {
-            return response()->json([
-                'mensagem' => 'Imagem nao encontrado',
-                'código' => '500'
-            ], 500);
-
-        }
-
-        return response()->json([
-            'dados' => $imagem,
-            'mensagem' => 'imagem mostrada com sucesso',
-
-        ]);
-
-    }
     public function create(){
-        return view('admin.image.create_image');
+        return view('admin.image.create_image',['edit'=>0]);
     }
 
+    public function edit(Image $imagen){
+          $edit = 1;
+        return view('admin.image.create_image',compact('imagen','edit'));
+    }
 }

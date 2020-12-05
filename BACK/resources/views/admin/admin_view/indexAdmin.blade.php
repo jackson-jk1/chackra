@@ -11,8 +11,8 @@
                 <li>
                     <a href="{{ route('eventos') }}">Reservas</a> </li>
                 <li>
-                <li> <a href="{{ route('imagens.index') }}">Imagens</a> </li>
-                <li> <a href="{{ route('imagens.index') }}">Administradores</a> </li>
+                <li> <a href="{{ route('imagen.index') }}">Imagens</a> </li>
+                <li> <a href="{{ route('admin.index') }}">Administradores</a> </li>
                 <li> <a href="{{ route('logout') }}"
                         onclick="event.preventDefault();
 
@@ -36,7 +36,9 @@
         </div>
           @if ($parameter == 0)
             <div id="calendar_admin">
+
                 @include('admin.calendar.calendar');
+
             </div>
 
           @endif
@@ -44,8 +46,14 @@
                     @include('admin.admin_view.client_list');
             @endif
             @if($parameter == 2)
+
             @include('admin.image.list_image');
             @endif
+
+            @if($parameter == 3)
+            @include('admin.admin_view.admin_list');
+            @endif
+
 
 
     </div>

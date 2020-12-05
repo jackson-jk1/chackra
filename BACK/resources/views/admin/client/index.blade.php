@@ -24,12 +24,41 @@
                     </a>
                 </div>
         </div>
-        <a class="btn btn-info btn-flat email-fixo" data-custom='open_modal' href="">
+        <button type="button" class="btn btn-info btn-flat email-fixo" data-toggle="modal" data-target="#modalForm">
             <i class="fa fa-comment-o" style="font-size:48px"></i>
-        </a>
+        </button>
+        <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Save Post</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="POST" action="{{route('mail')}}">
+                            @csrf
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1"><h3>Seu email</h3></label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+                                <label for="exampleFormControlInput1"><h3>Seu nome</h3></label>
+                                <input type="text" class="form-control" id="name" placeholder="seu nome" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1"><h3>Digite sua Mensagem</h3></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="bodyMessage"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">Success</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="calendarMain">
-            <h1 class="mb-5"> Confira um dia livre e faça uma reserva</h1>
-                <div id="calendar-content">
+            <h1 class="mb-5 text"> Confira um dia livre e faça uma reserva</h1>
+                <div id="calendar-content main_calendar">
                 @include('admin.calendar.calendar')
                 </div>
         </div>

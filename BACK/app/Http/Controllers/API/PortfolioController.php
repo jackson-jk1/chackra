@@ -118,6 +118,8 @@ class PortfolioController extends Controller
         ], 500);
     }
 
+public function edit(){
 
+}
 
 }
