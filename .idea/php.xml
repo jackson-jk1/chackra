@@ -219,6 +219,16 @@
       <path value="$PROJECT_DIR$/BACK/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/BACK/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/BACK/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/BACK/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/BACK/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/BACK/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/BACK/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/BACK/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/BACK/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/BACK/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/BACK/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/BACK/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/BACK/vendor/symfony/filesystem" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
