@@ -18,11 +18,9 @@ class ImagesController extends Controller
             'images' => 'required|image',
         ]);
         if ($validator->fails())
-            return response()->json([
-                'dados' => $validator->errors(),
-                'menssagem' => 'Campo inválido',
-                'codigo' => '400'
-            ], 400);
+            return view('admin.image.create_image',['edit'=>3]);
+
+
 
         $image = Storage::putFile('public/imagens', $request->file('images'), 'public');
         $image =  substr($image, 7); // remove 'public/' para facilitar para o front
@@ -30,7 +28,7 @@ class ImagesController extends Controller
         $imagem->name = $request->name;
         $imagem->path = $image;
         $imagem->save();
-        return redirect('imagens');
+        return redirect('imagen');
     }
 
     public function update(Request $request ,Image $imagen)
@@ -41,12 +39,7 @@ class ImagesController extends Controller
              'name' => 'nullable|string'
          ]);
 
-         if ($validator->fails())
-             return response()->json([
-                 'dados' => $validator->errors(),
-                 'menssagem' => 'Campo inválido',
-                 'codigo'=> '400'
-            ] , 400);
+        return view('admin.image.create_image',['edit'=>3]);
 
         $imagem = Image::find($imagen);
         if (!$imagem) {

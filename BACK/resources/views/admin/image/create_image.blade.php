@@ -1,5 +1,6 @@
 @extends('layouts.layout')
 @section('content')
+
     <form method="POST"
           @if($edit == 1)
           action="{{ route('imagen.update',['imagen'=>$imagen->id])}}"
@@ -10,6 +11,7 @@
         @csrf
         <div class="container">
             <div class="row justify-content-center">
+
             <div id="imagem_form">
                 @if($edit == 1)
                 <input type="hidden"  name="_method" value="PUT">
@@ -27,6 +29,12 @@
                     </select>
                 @endif
                 <p>Imagem:</p><input type="file" name="images" /><br>
+                    @if($edit == 3)
+                        <ul class="alert alert-danger mt-5">
+                            <li><p>Por favor preencha todos os campos
+                                </p></li>
+                        </ul>
+                    @endif
                 <button type="submit" class="btn btn-success mt-1">Enviar</button>
                     <a class="btn btn-primary mt-1" href="{{route('imagen.index')}}">Voltar</a>
             </div>

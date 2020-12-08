@@ -34,8 +34,9 @@ class SendEmailController extends Mailable
 
 
         return $this->from('biladanoar@gmail.com')->
-            subject('vamo la ')->
+            subject('Contato')->
             view('admin.client.contato')->
             with('data', $this->data);
     }
 }
+

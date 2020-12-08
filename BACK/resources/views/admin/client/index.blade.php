@@ -24,6 +24,9 @@
                     </a>
                 </div>
         </div>
+        <a href="https://api.whatsapp.com/send?phone=5541995366198&"  class="btn btn-flat whats-fixo">
+            <i  class="fa fa-comment" style="font-size:48px; color: lawngreen"></i>
+        </a>
         <button type="button" class="btn btn-info btn-flat email-fixo" data-toggle="modal" data-target="#modalForm">
             <i class="fa fa-comment-o" style="font-size:48px"></i>
         </button>
@@ -31,7 +34,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Save Post</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -41,9 +44,20 @@
                             @csrf
                             <div class="form-group">
                                 <label for="exampleFormControlInput1"><h3>Seu email</h3></label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                                @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                                 <label for="exampleFormControlInput1"><h3>Seu nome</h3></label>
-                                <input type="text" class="form-control" id="name" placeholder="seu nome" name="name">
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                @error('name')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlTextarea1"><h3>Digite sua Mensagem</h3></label>

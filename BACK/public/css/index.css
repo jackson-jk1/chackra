@@ -1,3 +1,8 @@
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
 #fundo{
     background-image: url("/assets/image_backgorund/pinheiro.jpg");
     background-size: 100%;
@@ -30,6 +35,7 @@ div#calendarMain{
     padding-bottom: 20px;
     text-align: center;
     background-color: #ffffff;
+    margin: 15px;
 }
 
 div#calendar-content{
@@ -39,6 +45,7 @@ div#calendar-content{
     background-color: #ffffff;
     border: 8px solid #994d00;
     border-top: 30px solid #994d00;
+
 
 }
 
@@ -219,6 +226,13 @@ textarea#exampleFormControlTextarea1.form-control{
     left:10px;
     z-index: 999;
 }
+.whats-fixo
+{
+    position: fixed;
+    bottom:10px;
+    left:90%;
+    z-index: 999;
+}
 
 @media screen and (max-width: 600px) {
 
@@ -287,6 +301,15 @@ textarea#exampleFormControlTextarea1.form-control{
     #content{
         width: 0;
     }
+    div.fc .fc-toolbar.fc-header-toolbar {
+        margin-bottom: 1.5em;
+        font-size: 9px;
+    }
+
+    button.fc-today-button.fc-button.fc-button-primary{
+        display: none;
+    }
+
 }
 select.custom-select.custom-select-sm.form-control.form-control-sm{
     font-size: 0.5em;

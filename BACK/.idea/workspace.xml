@@ -23,8 +23,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45de4e8f-e8d4-49be-a220-2836962cea03" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/lang/pt_BR/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/pt_BR/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/pt_BR/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/pt_BR/validation-inline.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/pt_BR/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/manicure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/manicure.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ImagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ImagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ClientFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ClientsTableSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/EventTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/EventTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_view/client_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_view/client_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_view/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_view/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/client/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/client/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/image/create_image.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/image/create_image.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/navbar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,6 +177,8 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php" />
+      <path value="$PROJECT_DIR$/vendor/caouecs/laravel-lang" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ieqnb3TWsAITukUtiOU7FaEqHq" />
@@ -168,7 +191,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -178,6 +201,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/lang" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -200,7 +228,11 @@
       <workItem from="1607016905359" duration="24200000" />
       <workItem from="1607119571457" duration="10762000" />
       <workItem from="1607134176406" duration="4774000" />
-      <workItem from="1607191734480" duration="6515000" />
+      <workItem from="1607191734480" duration="7480000" />
+      <workItem from="1607203668704" duration="615000" />
+      <workItem from="1607260509983" duration="1271000" />
+      <workItem from="1607363369685" duration="4902000" />
+      <workItem from="1607448276924" duration="11927000" />
     </task>
     <servers />
   </component>

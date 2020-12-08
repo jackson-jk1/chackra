@@ -38,7 +38,14 @@
         </div>
     </div>
 
-
+    @if($errors->any())
+        <ul class="alert alert-danger">
+            @foreach($errors->all() as $error)
+                <li><p>{{$error}}</p></li>
+            @endforeach
+                <li>O evento nao foi cadastrado</li>
+        </ul>
+    @endif
 <div class="card shadow mb-4">
     <div class="card-body">
         <div class="table-responsive ">

@@ -1,6 +1,12 @@
 @extends('layouts.layout')
 @section('content')
-
+    @if($errors->any())
+        <ul class="alert alert-danger">
+            @foreach($errors->all() as $error)
+                <li><p>{{$error}}</p></li>
+            @endforeach
+        </ul>
+    @endif
         <form  method="POST" action="{{route('event.update',['event'=>$event->id])}}">
             @csrf
             {{method_field('PUT')}}
